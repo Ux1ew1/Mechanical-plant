@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     function hideTabList(a) {
         for (let i = a; i < listItem.length; i++) {
-            listItem[i].classList.remove("active");
+            listItem[i].classList.remove("active-item");
         }
     }
 
@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     function showTabList(b) {
-        listItem[b].classList.add("active");
+        listItem[b].classList.add("active-item");
     }
 
     list.addEventListener("click", function (event) {

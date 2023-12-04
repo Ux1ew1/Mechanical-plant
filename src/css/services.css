@@ -6,6 +6,7 @@
     font-size: 22px;
     font-weight: 800;
     line-height: 1;
+    padding-left: 40px;
     margin-bottom: 40px;
     color: #000000;
 }
@@ -16,15 +17,17 @@
 .services-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 14px;
 }
 
 .list {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0 10px;
-    gap: 24px;
-    border-right: solid #999999;
+    padding: 0 9px;
+    gap: 29px;
+    border-right: 2px solid #999999;
 }
 
 .list__item {
@@ -45,10 +48,12 @@
 }
 
 .content-image {
+    width: 600px;
 }
 
 .content-text {
-    width: 400px;
+    max-width: 400px;
+    min-width: 200px;
     font-size: 18px;
     font-weight: 400;
     padding: 10px 0;
@@ -58,9 +63,53 @@
 
 .active {
     display: flex;
+    position: relative;
     color: #000000;
+}
+
+.active-item {
+    display: flex;
+    position: relative;
+    color: #000000;
+}
+
+.active-item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 29px;
+    top: 0;
+    right: -11px;
+    background-color: rgb(224, 182, 42);
 }
 
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .content__item {
+        gap: 24px;
+    }
+
+    .content-image {
+        width: 460px;
+    }
+
+    .content-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        width: 96%;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 60px;
+        align-items: start;
+    }
 }

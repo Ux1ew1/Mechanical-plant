@@ -32,7 +32,18 @@
                         alt="Header logo"
                         class="header-logo"
                     />
-                    <div class="burger-menu-button">
+                    <div class="header-bottom__buttons">
+                        <nav class="header-navigation">
+                            <a href="#works" class="header-navigation__link"
+                                >Работы</a
+                            >
+                            <a href="#about" class="header-navigation__link"
+                                >История</a
+                            >
+                            <a href="#services" class="header-navigation__link"
+                                >Услуги</a
+                            >
+                        </nav>
                         <svg
                             class="burger-menu"
                             viewBox="0 0 24 24"
@@ -95,7 +106,7 @@
             </div>
         </header>
         <div class="container">
-            <section class="works">
+            <section class="works" id="works">
                 <!-- <div class="works-navigation">
                 <div
                     class="works-navigation__item fadeInTop animation-delay1500"
@@ -249,7 +260,7 @@
                 </div>
             </section>
         </div>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="about-title">ЯМЗ Краткое Представление</h2>
                 <div class="about-container">
@@ -274,7 +285,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="services-title">
                     Производство, а так же наш спектр услуг
@@ -284,7 +295,7 @@
                         <!-- toggle -->
                         <div class="list">
                             <!-- tabs -->
-                            <div class="list__item active">
+                            <div class="list__item active-item">
                                 Механическое производство
                             </div>
                             <div class="list__item">Почтовые ящики</div>

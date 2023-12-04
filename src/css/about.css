@@ -7,6 +7,7 @@
     font-size: 22px;
     font-weight: 800;
     line-height: 1;
+    padding-left: 40px;
     margin-bottom: 40px;
     color: #000000;
 }
@@ -41,7 +42,7 @@
     padding: 6px 14px;
     border-radius: 6px;
     transition: all 40ms ease-in;
-    background-color: rgb(230, 180, 14);
+    background-color: rgb(224, 182, 42);
 }
 
 .about-link:hover {
