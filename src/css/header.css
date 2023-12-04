@@ -1,0 +1,91 @@
+.header {
+}
+
+.header-top {
+    background: #dbdbdb;
+    padding: 0 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-link {
+    position: relative;
+    text-decoration: none;
+    line-height: 1;
+    color: #000000;
+    padding: 10px 0 10px 20px;
+}
+
+.geolocation::before {
+    content: url("/src/image/location-icon.svg");
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -50%);
+    width: 20px;
+}
+
+.phone::before {
+    content: url("/src/image/phone-icon.svg");
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -40%);
+    width: 20px;
+}
+
+.mail::before {
+    content: url("/src/image/mail-icon.svg");
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -50%);
+    width: 20px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+}
+
+.header-logo {
+    height: 160px;
+}
+
+.burger-menu {
+    width: 40px;
+    cursor: pointer;
+}
+
+.header-slider {
+    overflow: hidden;
+}
+
+.header-slider__wrapper {
+    display: flex;
+}
+
+.header-slider__image {
+    width: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .header-link {
+        font-size: 14px;
+    }
+
+    .header-logo {
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header-top {
+        flex-direction: column;
+        gap: 0;
+    }
+}
